@@ -1,0 +1,31 @@
+seed: 42
+cv_folds: 5
+test_size: 0.15
+val_size: 0.15
+threshold_z: 3.0
+features:
+  - energy_kwh
+  - duration_sec
+  - avg_kw
+  - session_cost
+  - cost_per_kwh
+  - start_hour
+  - day_of_week
+models:
+  dbn:
+    rbm_layers: [128, 64]
+    rbm_learning_rate: 0.01
+    rbm_n_iter: 20
+    classifier_C: 1.0
+  ai_sgf_autoencoder:
+    hidden_dims: [64, 32, 16]
+    lr: 0.001
+    batch_size: 128
+    epochs: 20
+data:
+  csv_path: data/openenergyhub_ev_charging.csv
+  datetime_col_start: start_time
+  datetime_col_end: end_time
+  energy_kwh_col: energy_kwh
+  session_cost_col: session_cost
+  site_id_col: site_id

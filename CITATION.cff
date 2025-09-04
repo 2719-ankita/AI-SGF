@@ -1,0 +1,12 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and this repository."
+title: "AI-SGF: AI-Augmented Smart Grid for EV Charging Intrusion Detection"
+version: "1.0.0"
+date-released: "2025-09-04"
+authors:
+  - family-names: "Shabaz"
+    given-names: "Dr"
+  - family-names: "Contributors"
+    given-names: "Open-source"
+license: "MIT"

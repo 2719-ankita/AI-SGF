@@ -1,0 +1,11 @@
+.ipynb_checkpoints/
+__pycache__/
+artifacts/
+.env
+*.log
+*.png
+*.pdf
+*.pt
+*.pth
+*.joblib
+.DS_Store
